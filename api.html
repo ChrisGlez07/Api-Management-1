@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién es ese Pokemon?</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#pokemon-table th,
+#pokemon-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#pokemon-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <h1>¿Quién es ese Pokémon?</h1>
+    <input type="text" id="pokemon-input" placeholder="Número del Pokémon">
+    <button id="fetch-button">Buscar Pokémon</button>
+    <table id="pokemon-table">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre del Pokémon</th>
+                <th>Número del Pokémon</th>
+                <th>Ataque principal del Pokémon</th>
+                <th>Tipo del Pokémon</th>
+                <th>HP del Pokémon</th>
+            </tr>
+        </thead>
+        <tbody id="pokemon-table-body">
+        </tbody>
+    </table>
+    <script src="api.js"></script>
+</body>
+</html>
+
+
